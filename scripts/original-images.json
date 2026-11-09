@@ -1,0 +1,146 @@
+{
+  "anita-portrait.png": {
+    "sha256": "03f4dae01b9afd25656b00531a597a3bc24458293bfb48876347b0d420a0a0ce",
+    "size": 127927,
+    "width": 474,
+    "height": 474,
+    "format": "PNG",
+    "asset_id": "79126c2e-ba1a-420f-9dec-fcfbd53ff8a9"
+  },
+  "logo.png": {
+    "sha256": "ed8cd44d349b2357106aea1ca04e4e879db2ffc2c2ce7c3b48aeb15d2760925e",
+    "size": 13401,
+    "width": 200,
+    "height": 200,
+    "format": "PNG",
+    "asset_id": "6986a7d8-a7e7-4576-9bbd-230d955c50ac"
+  },
+  "new-10.jpg": {
+    "sha256": "73db730d47de759a9e31ee449b092e1d57b5e911a94ce97ace86e53285da4a1a",
+    "size": 928821,
+    "width": 736,
+    "height": 920,
+    "format": "PNG",
+    "asset_id": "fee8c463-bf87-4985-9646-355f11e71681"
+  },
+  "new-11.jpg": {
+    "sha256": "f47984bd30aff13ba4172723d2cd174ef6d1ed53935f6fee001e68e5f63fbf1b",
+    "size": 730805,
+    "width": 640,
+    "height": 853,
+    "format": "PNG",
+    "asset_id": "c4971c8e-b27e-409e-9cf1-0567ee892817"
+  },
+  "new-12.jpg": {
+    "sha256": "44161d98ed07f46ec4f002b2c404cdf11f4090bdae2206331bc47ffbcfd4a1d1",
+    "size": 332733,
+    "width": 527,
+    "height": 527,
+    "format": "PNG",
+    "asset_id": "64d587b2-7246-42c3-807e-78451bd327d4"
+  },
+  "new-13.jpg": {
+    "sha256": "9095e355a7126bf73fdcf794f678dac683c6bf7eff243cd69b66db67dd189d92",
+    "size": 916418,
+    "width": 736,
+    "height": 981,
+    "format": "PNG",
+    "asset_id": "b4be1446-9ea6-433e-a19b-042b1c72e039"
+  },
+  "new-14.jpg": {
+    "sha256": "2e1c84a69ab85eda46a2f7a7af6e42c4ac03e23e0dddefdf2fcea56dd77a7486",
+    "size": 574628,
+    "width": 736,
+    "height": 490,
+    "format": "PNG",
+    "asset_id": "d2c56d8d-ff7a-4b79-97fb-82840f9989b0"
+  },
+  "new-15.jpg": {
+    "sha256": "ffc11d645aeeabf14f57e04f4f4316e7daa6d76b5f90f2c572556fff388a39c8",
+    "size": 771116,
+    "width": 675,
+    "height": 1200,
+    "format": "PNG",
+    "asset_id": "c98d0531-5bab-4c19-ae8b-c76e1df95216"
+  },
+  "new-16.jpg": {
+    "sha256": "4cbe3ae4d0de451b848bce1af26f6f09e5c083c9d74a21d808da2a1f5ac9c8d2",
+    "size": 1535700,
+    "width": 1080,
+    "height": 1440,
+    "format": "PNG",
+    "asset_id": "7a29a59f-d22c-47f5-be2b-01c9e4716c70"
+  },
+  "new-17.jpg": {
+    "sha256": "77ec0513e32bbcb590197901c63c37061e0cb2a75ac4f98876c7cdcc4d43e22b",
+    "size": 550902,
+    "width": 736,
+    "height": 981,
+    "format": "PNG",
+    "asset_id": "ce3450d7-09df-4c3b-b64e-aee0ded98c47"
+  },
+  "new-9.jpg": {
+    "sha256": "8d0b45a7cbecee119a00bb9a14448d508e5d7f1b8d4db21cc26944971cc93af7",
+    "size": 133732,
+    "width": 474,
+    "height": 474,
+    "format": "PNG",
+    "asset_id": "7edd65b6-dcda-4164-a260-d48029a9eeec"
+  },
+  "upload-2.jpg": {
+    "sha256": "7719ebf51b54401b4d83ed9a5f38839d06004127a6bfee99a3942ac09b8ae241",
+    "size": 372077,
+    "width": 735,
+    "height": 490,
+    "format": "PNG",
+    "asset_id": "a1746cf8-6e75-4ca7-932d-f37326e74b83"
+  },
+  "upload-3.jpg": {
+    "sha256": "4e481dd8b24492c0b6850fb76b8c25e9e3e27e2463c90809f28b25176242164c",
+    "size": 723960,
+    "width": 736,
+    "height": 736,
+    "format": "PNG",
+    "asset_id": "a8d13a9b-5c0e-4b77-8f6e-3a8be20b0987"
+  },
+  "upload-4.jpg": {
+    "sha256": "e8cc2b02548a4138fda862426c4aec0c70e1786052daab916f270d1b23b060da",
+    "size": 721612,
+    "width": 735,
+    "height": 656,
+    "format": "PNG",
+    "asset_id": "33ef05d0-cf02-4753-9154-d92880ea07e3"
+  },
+  "upload-5.jpg": {
+    "sha256": "6d22a4d602248adbc417966c0d032d248950bbeb095d79e5e970988f1d9d12d4",
+    "size": 349924,
+    "width": 811,
+    "height": 540,
+    "format": "PNG",
+    "asset_id": "0c00d2d8-26e8-458d-9f24-a5834348cddc"
+  },
+  "upload-6.jpg": {
+    "sha256": "716148d48c6c685f4ae0d4b0c2ff1ea4d547a94bcbd9c21f6e2e69cc6278aa82",
+    "size": 356159,
+    "width": 590,
+    "height": 393,
+    "format": "PNG",
+    "asset_id": "c24574e9-7c6f-4c52-84c1-064a8fab9685"
+  },
+  "upload-7.jpg": {
+    "sha256": "e774f5f23e562ceda9dd7ece23f5406283a1c290f20d4c089253505e36170d44",
+    "size": 2075084,
+    "width": 1280,
+    "height": 853,
+    "format": "PNG",
+    "asset_id": "2d921293-5ea9-446f-82eb-e145b7155ea6"
+  },
+  "upload.jpg": {
+    "sha256": "aed0d6d680697b0992fe1f866b7fefc5363c24c8a63db2ef345fc2d6291173e2",
+    "size": 344431,
+    "width": 806,
+    "height": 488,
+    "format": "PNG",
+    "asset_id": "fdf51372-c0e2-43fc-8061-bff4fc2175d3"
+  }
+}
