@@ -133,11 +133,17 @@ are copied to the production client output automatically by Vite. A build
 check verifies that every emitted image is byte-identical to its local source
 and fails the build if any image is missing or changed.
 
-For Netlify, use `npm run build`, set `NITRO_PRESET=netlify` in Netlify's build
-environment, and use the public output directory reported by that build.
-Deploy the entire generated output, not just the server entry or source code.
+`netlify.toml` configures `npm run build`, `NITRO_PRESET=netlify`, Node 22,
+and the publish directory `dist/client`. Nitro writes Netlify's server
+functions separately. Deploy a fresh GitHub commit using these settings;
+an older deployment does not contain newer image references or checks.
 The image setup needs internet access only when originals are not already
 present; deployed visitors never request these images from Lovable.
+`scripts/original-images.json` records SHA-256 fingerprints, dimensions,
+and original asset identities for all 18 retrieved uploads. Preparation checks
+the original fingerprints, not just file sizes, and restores corrupt local
+copies from the original upload. Missing or altered originals fail explicitly
+with their filename. No fallback image is ever used.
 
 ### Image inventory
 
@@ -156,7 +162,8 @@ present; deployed visitors never request these images from Lovable.
 | Manual Therapy | new-15.jpg |
 | Header and footer on all pages | logo.png |
 
-There are **15 unique images in use**. Another three original assets are
+All **18 original uploads** were retrieved and compared byte-for-byte; none
+were missing. There are **15 unique images in use**. Another three original assets are
 preserved locally but currently unused: anita-portrait.png, upload-3.jpg,
 upload-7.jpg. Five earlier, unused JPGs remain unchanged in `src/assets`.
 There is no gallery or separate Contact photo. Contact, Conditions,

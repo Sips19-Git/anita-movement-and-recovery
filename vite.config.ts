@@ -9,6 +9,11 @@ import { verifyImageOutputPlugin } from "./scripts/verify-image-output.mjs";
 
 export default defineConfig({
   vite: { plugins: [verifyImageOutputPlugin()] },
+  // Match Netlify's publish directory to the verified client image output.
+  // Lovable keeps its own preview target and output configuration.
+  nitro: process.env.NETLIFY === "true" || process.env.NITRO_PRESET === "netlify"
+    ? { preset: "netlify", output: { publicDir: "dist/client" } }
+    : undefined,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
