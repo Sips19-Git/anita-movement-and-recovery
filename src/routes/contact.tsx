@@ -12,6 +12,8 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Us" },
       { property: "og:description", content: "Book your physiotherapy appointment in Potchefstroom." },
       { property: "og:url", content: "/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),

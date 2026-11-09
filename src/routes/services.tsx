@@ -11,6 +11,8 @@ export const Route = createFileRoute("/services")({
       { property: "og:title", content: "Physiotherapy Services" },
       { property: "og:description", content: "From sports injury to chronic pain — comprehensive physiotherapy services in Potchefstroom." },
       { property: "og:url", content: "/services" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
   }),

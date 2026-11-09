@@ -6,9 +6,9 @@ import { TestimonialCarousel } from "@/components/site/TestimonialCarousel";
 import { FaqAccordion } from "@/components/site/FaqAccordion";
 
 import { services, conditions, site, whatsappLink } from "@/data/site";
-import anita from "@/assets/new-9.jpg.asset.json";
-import clinic from "@/assets/new-10.jpg.asset.json";
-import ctaBg from "@/assets/upload-2.jpg.asset.json";
+const anita = { url: "/images/new-9.jpg" };
+const clinic = { url: "/images/new-10.jpg" };
+const ctaBg = { url: "/images/upload-2.jpg" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,6 +18,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Anita van der Lingen Physiotherapy" },
       { property: "og:description", content: "Restore movement, recover stronger. Trusted physiotherapy in Potchefstroom." },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),

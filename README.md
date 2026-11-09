@@ -123,3 +123,44 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Portable images and Netlify
+
+All displayed images use same-origin `/images/` paths. `npm run dev` and
+`npm run build` prepare exact originals in `public/images` from the retained
+asset pointers, without resizing, compression, or substitutions. These files
+are copied to the production client output automatically by Vite. A build
+check verifies that every emitted image is byte-identical to its local source
+and fails the build if any image is missing or changed.
+
+For Netlify, use `npm run build`, set `NITRO_PRESET=netlify` in Netlify's build
+environment, and use the public output directory reported by that build.
+Deploy the entire generated output, not just the server entry or source code.
+The image setup needs internet access only when originals are not already
+present; deployed visitors never request these images from Lovable.
+
+### Image inventory
+
+| Placement | Original files served locally |
+| --- | --- |
+| Home slideshow (four slides) | upload-5.jpg, upload-4.jpg, upload-6.jpg, upload.jpg |
+| Home clinic photo | new-10.jpg |
+| Home and About Anita photo | new-9.jpg |
+| Home appointment background | upload-2.jpg |
+| Sports Physiotherapy | new-16.jpg |
+| Orthopaedic Rehabilitation | new-12.jpg |
+| Post-Surgery Recovery | new-13.jpg |
+| Pain Management | new-11.jpg |
+| Mobility & Strength | new-14.jpg |
+| Injury Prevention | new-17.jpg |
+| Manual Therapy | new-15.jpg |
+| Header and footer on all pages | logo.png |
+
+There are **15 unique images in use**. Another three original assets are
+preserved locally but currently unused: anita-portrait.png, upload-3.jpg,
+upload-7.jpg. Five earlier, unused JPGs remain unchanged in `src/assets`.
+There is no gallery or separate Contact photo. Contact, Conditions,
+Testimonials, and FAQs use the shared logo. Navigation, service, social,
+contact, and WhatsApp icons are bundled inline SVGs from Lucide, not hosted
+image links. Google Maps remains an external interactive embed; downloading
+its changing map tiles would alter its functionality.

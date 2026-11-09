@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CheckCircle2, ArrowRight, Trophy } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import anita from "@/assets/new-9.jpg.asset.json";
+const anita = { url: "/images/new-9.jpg" };
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -12,6 +12,8 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Anita van der Lingen" },
       { property: "og:description", content: "Registered physiotherapist with a passion for evidence-based, patient-centred care." },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
