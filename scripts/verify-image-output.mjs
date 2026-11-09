@@ -18,9 +18,23 @@ export function verifyImageOutputPlugin() {
   return {
     name: 'verify-local-image-output',
     apply: 'build',
+    async generateBundle() {
+      if (this.environment.name !== 'client') return;
+      const source = path.join(this.environment.config.root, 'public/images');
+      // Preview builds can disable Vite's public directory copying. Emit the
+      // original bytes explicitly so these assets are part of every bundle.
+      for (const name of await readdir(source)) {
+        this.emitFile({
+          type: 'asset',
+          fileName: `images/${name}`,
+          source: await readFile(path.join(source, name)),
+        });
+      }
+    },
     async writeBundle(options) {
       if (this.environment.name !== 'client' || !options.dir) return;
-      await verifyImageOutput(process.cwd(), path.resolve(options.dir));
+      const root = this.environment.config.root;
+      await verifyImageOutput(root, path.resolve(root, options.dir));
     },
   };
 }
