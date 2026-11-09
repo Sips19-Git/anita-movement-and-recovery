@@ -11,6 +11,8 @@ export const Route = createFileRoute("/testimonials")({
       { property: "og:title", content: "Patient Testimonials" },
       { property: "og:description", content: "Real recoveries. Real people." },
       { property: "og:url", content: "/testimonials" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/testimonials" }],
   }),

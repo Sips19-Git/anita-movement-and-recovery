@@ -10,6 +10,8 @@ export const Route = createFileRoute("/conditions")({
       { property: "og:title", content: "Conditions Treated" },
       { property: "og:description", content: "A complete list of conditions our physiotherapy practice treats." },
       { property: "og:url", content: "/conditions" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/conditions" }],
   }),

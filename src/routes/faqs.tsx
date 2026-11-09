@@ -10,6 +10,8 @@ export const Route = createFileRoute("/faqs")({
       { property: "og:title", content: "Frequently Asked Questions" },
       { property: "og:description", content: "Everything you need to know before your first visit." },
       { property: "og:url", content: "/faqs" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/faqs" }],
   }),

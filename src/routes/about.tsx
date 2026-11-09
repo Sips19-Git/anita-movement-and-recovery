@@ -12,6 +12,8 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Anita van der Lingen" },
       { property: "og:description", content: "Registered physiotherapist with a passion for evidence-based, patient-centred care." },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),

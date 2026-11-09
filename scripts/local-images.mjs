@@ -10,7 +10,8 @@ const origin = 'https://anita-movement-and-recovery.lovable.app';
 // Download originals once during setup/build, never in the deployed browser.
 // Keep every pointer, including currently unused photos, available for export.
 await mkdir(output, { recursive: true });
-await Promise.all((await readdir(source)).filter(name => name.endsWith('.asset.json')).map(async name => {
+const pointers = (await readdir(source)).filter(name => name.endsWith('.asset.json'));
+await Promise.all(pointers.map(async name => {
   const asset = JSON.parse(await readFile(path.join(source, name), 'utf8'));
   const filename = path.basename(asset.original_filename);
   const destination = path.join(output, filename);
@@ -25,4 +26,4 @@ await Promise.all((await readdir(source)).filter(name => name.endsWith('.asset.j
   await writeFile(destination, bytes);
   console.log(`Preserved ${filename}: ${bytes.length} bytes`);
 }));
-console.log('All 19 original image assets are available in public/images.');
+console.log(`All ${pointers.length} original image assets are available in public/images.`);

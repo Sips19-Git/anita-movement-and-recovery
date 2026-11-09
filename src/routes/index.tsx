@@ -18,6 +18,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Anita van der Lingen Physiotherapy" },
       { property: "og:description", content: "Restore movement, recover stronger. Trusted physiotherapy in Potchefstroom." },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
