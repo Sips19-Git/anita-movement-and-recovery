@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CheckCircle2, ArrowRight, Trophy } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import anita from "@/assets/new-9.jpg.asset.json";
+const anita = { url: "/images/new-9.jpg" };
 
 export const Route = createFileRoute("/about")({
   head: () => ({

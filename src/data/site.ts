@@ -1,14 +1,14 @@
-import hero6 from "@/assets/upload-5.jpg.asset.json";
-import hero5 from "@/assets/upload-4.jpg.asset.json";
-import hero7 from "@/assets/upload-6.jpg.asset.json";
-import hero1 from "@/assets/upload.jpg.asset.json";
-import svc1 from "@/assets/new-11.jpg.asset.json";
-import svc2 from "@/assets/new-12.jpg.asset.json";
-import svc3 from "@/assets/new-13.jpg.asset.json";
-import svc4 from "@/assets/new-14.jpg.asset.json";
-import svc5 from "@/assets/new-15.jpg.asset.json";
-import svc6 from "@/assets/new-16.jpg.asset.json";
-import svc7 from "@/assets/new-17.jpg.asset.json";
+const hero6 = { url: "/images/upload-5.jpg" };
+const hero5 = { url: "/images/upload-4.jpg" };
+const hero7 = { url: "/images/upload-6.jpg" };
+const hero1 = { url: "/images/upload.jpg" };
+const svc1 = { url: "/images/new-11.jpg" };
+const svc2 = { url: "/images/new-12.jpg" };
+const svc3 = { url: "/images/new-13.jpg" };
+const svc4 = { url: "/images/new-14.jpg" };
+const svc5 = { url: "/images/new-15.jpg" };
+const svc6 = { url: "/images/new-16.jpg" };
+const svc7 = { url: "/images/new-17.jpg" };
 
 export const site = {
   name: "Anita van der Lingen Physiotherapy",
